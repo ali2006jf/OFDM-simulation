@@ -2,7 +2,7 @@
 
 <!-- 📡 Block Diagram -->
 <p align="center">
-  <img src="https://your-link.com/ofdm-block-diagram.png" alt="OFDM Block Diagram" style="width: 100%; max-width: 900px; border-radius: 12px; border: 2px solid #ccc;">
+  <img src="ofdm-photos/ofdm-diagram.png" alt="OFDM Block Diagram" style="width: 100%; max-width: 900px; border-radius: 12px; border: 2px solid #ccc;">
 </p>
 
 ## 🚀 Project Overview  
