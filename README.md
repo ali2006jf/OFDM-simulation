@@ -19,7 +19,7 @@ The simulation calculates key performance metrics such as Bit Error Rate (BER) a
 - MATLAB (compatible with R2018b and later versions)
 
 ## 🎯 How to Use  
-1. Open `ofdm_simulation.m` in MATLAB.  
+1. Open `OFDM.m` in MATLAB.  
 2. Run the script to start the simulation.  
 3. Observe constellation plots and BER vs. SNR graphs generated automatically.  
 4. Adjust simulation parameters such as SNR range, number of subcarriers, or bit length directly in the script to experiment with different scenarios.
