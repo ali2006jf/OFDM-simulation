@@ -18,8 +18,8 @@ This MATLAB project provides a complete simulation of an Orthogonal Frequency Di
 
 <!-- 🎯 Constellation Diagrams -->
 <p align="center">
-  <img src="https://your-link.com/constellation-snr5.png" alt="Constellation at SNR=5" width="200" style="margin: 10px; border-radius: 8px; border: 2px solid #aaa;">
-  <img src="https://your-link.com/constellation-snr20.png" alt="Constellation at SNR=20" width="200" style="margin: 10px; border-radius: 8px; border: 2px solid #aaa;">
+  <img src="ofdm-photos/Constellation-5SNR.jpg" alt="Constellation at SNR=5" width="200" style="margin: 10px; border-radius: 8px; border: 2px solid #aaa;">
+  <img src="ofdm-photos/Constellation-20SNR.jpg" alt="Constellation at SNR=20" width="200" style="margin: 10px; border-radius: 8px; border: 2px solid #aaa;">
 </p>
 
 ## 🛠️ Requirements  
