@@ -1,33 +1,39 @@
 # OFDM Communication System Simulation with 16-QAM Modulation
 
-## 🚀 Project Overview  
-This MATLAB project provides a complete simulation of an Orthogonal Frequency Division Multiplexing (OFDM) system using 16-QAM modulation. It demonstrates the entire digital communication chain—from generating random binary data, mapping bits to complex 16-QAM symbols, performing OFDM modulation via IFFT, adding cyclic prefix for robustness, transmitting through an AWGN channel, to finally demodulating and recovering the original bits.
+<!-- 📡 Block Diagram -->
+<p align="center">
+  <img src="https://your-link.com/ofdm-block-diagram.png" alt="OFDM Block Diagram" style="width: 100%; max-width: 900px; border-radius: 12px; border: 2px solid #ccc;">
+</p>
 
-The simulation calculates key performance metrics such as Bit Error Rate (BER) and Signal-to-Noise Ratio (SNR), and visualizes constellation diagrams and BER performance curves, making it an excellent learning tool for understanding modern wireless communication techniques.
+## 🚀 Project Overview  
+This MATLAB project provides a complete simulation of an Orthogonal Frequency Division Multiplexing (OFDM) system using 16-QAM modulation. It demonstrates the full digital communication pipeline—from random bit generation, 16-QAM symbol mapping, OFDM modulation using IFFT, cyclic prefix addition, transmission over an AWGN channel, and demodulation with BER evaluation.
 
 ## ✨ Key Features  
-- Generation of random binary input data  
-- Bit-to-symbol mapping using 16-QAM modulation  
-- OFDM modulation with Inverse Fast Fourier Transform (IFFT)  
-- Cyclic prefix insertion to combat inter-symbol interference  
-- Transmission through Additive White Gaussian Noise (AWGN) channel  
-- Demodulation and bit recovery  
-- Calculation and visualization of BER vs. SNR  
-- Constellation diagram plotting for transmitted and received symbols
+- Random bit generation  
+- 16-QAM modulation & demodulation  
+- OFDM with IFFT and cyclic prefix  
+- AWGN channel model  
+- BER vs. SNR performance evaluation  
+- Constellation diagrams for received symbols
+
+<!-- 🎯 Constellation Diagrams -->
+<p align="center">
+  <img src="https://your-link.com/constellation-snr5.png" alt="Constellation at SNR=5" width="200" style="margin: 10px; border-radius: 8px; border: 2px solid #aaa;">
+  <img src="https://your-link.com/constellation-snr20.png" alt="Constellation at SNR=20" width="200" style="margin: 10px; border-radius: 8px; border: 2px solid #aaa;">
+</p>
 
 ## 🛠️ Requirements  
-- MATLAB (compatible with R2018b and later versions)
+- MATLAB (R2018b or newer)
 
-## 🎯 How to Use  
-1. Open `OFDM.m` in MATLAB.  
-2. Run the script to start the simulation.  
-3. Observe constellation plots and BER vs. SNR graphs generated automatically.  
-4. Adjust simulation parameters such as SNR range, number of subcarriers, or bit length directly in the script to experiment with different scenarios.
+## ▶️ How to Run  
+1. Clone this repository  
+2. Open `ofdm_simulation.m` in MATLAB  
+3. Run the script to generate results and plots  
+4. Modify parameters like SNR, number of subcarriers, or data size to experiment
 
-## 💡 Why This Project?  
-OFDM is a cornerstone modulation technique used in many modern wireless systems including Wi-Fi, LTE, and 5G. This simulation offers hands-on insight into OFDM’s working principles and helps build a solid foundation for advanced study or research in digital communications.
+## 📚 Learning Purpose  
+OFDM is a foundational technology in modern wireless systems like Wi-Fi, LTE, and 5G. This simulation provides a clear and visual way to understand its inner workings.
 
 ---
 
-*Feel free to contribute or report issues!*
-
+*Feel free to star ⭐ this repo or contribute to improvements!*
