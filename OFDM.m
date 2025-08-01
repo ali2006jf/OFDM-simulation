@@ -1,5 +1,5 @@
 clc , clear
-%% Input Data
+% Input Data
 bits = randi([0 1], 1,256);
 
 num_subcarriers = 64;
@@ -7,7 +7,7 @@ padding_needed = mod(256 - mod(length(bits), 256), 256);
 bits = [bits, zeros(1, padding_needed)];
 I_bits = bits;
 
-%% Bit-to-Symbol Mapping 16-QAMA
+% Bit-to-Symbol Mapping 16-QAMA
 bit_4 = reshape(bits ,4, []);
 symbols = zeros(1,size(bit_4,2));
 
@@ -49,13 +49,13 @@ for k=1:size(bit_4,2)
     end
 
 end
-%%  Serial to Parallel
+%  Serial to Parallel
 ofdm_blocks = reshape(symbols, num_subcarriers, []); 
 
-%% IFFT
+% IFFT
 ofdm_time = ifft(ofdm_blocks, num_subcarriers, 1);
 
-%% Adding Cyclic Prefix
+% Adding Cyclic Prefix
 cp_len = num_subcarriers / 8;
 ofdm_with_cp = zeros(num_subcarriers + cp_len, size(ofdm_time,2));
 
@@ -64,7 +64,7 @@ for i = 1:size(ofdm_time, 2)
     ofdm_with_cp(:, i) = [cp; ofdm_time(:, i)];
 end
 
-%% Parallel to Serial
+% Parallel to Serial
 ofdm_serial = ofdm_with_cp(:).';
 
 
@@ -74,30 +74,24 @@ ofdm_serial = ofdm_with_cp(:).';
 
 
 
-%% Channel
+% Channel
 snr = 15; 
 rx_serial = awgn(ofdm_serial, snr, 'measured');
 
 
-%%
-
-
-
-
-
-%% Serial to Parallel
+% Serial to Parallel
 rx_matrix = reshape(rx_serial,num_subcarriers + cp_len , []);
 
-%% Cyclic Prefix Removal
+% Cyclic Prefix Removal
 rx_no_cp = rx_matrix(cp_len+1:end, :); %remove cp
 
-%% FFT
+% FFT
 rx_freq = fft(rx_no_cp, num_subcarriers, 1);  % size: [64 × num_blocks]
 
-%% Parallel to Serial
+% Parallel to Serial
 rx_symbols = rx_freq(:).'; 
 
-%% Symbol-to-Bit Mapping 16-QAM
+% Symbol-to-Bit Mapping 16-QAM
 
 sampled_I = real(rx_symbols);
 sampled_Q = imag(rx_symbols);
@@ -143,7 +137,7 @@ end
 
 
 
-%% Output Data
+% Output Data
 
 Rbits = Rbits(:).';
 
