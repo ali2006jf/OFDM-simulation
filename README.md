@@ -1,30 +1,33 @@
-OFDM Simulation with 16-QAM Modulation in MATLAB
-Overview
-This project simulates an Orthogonal Frequency Division Multiplexing (OFDM) communication system using 16-QAM modulation. It generates random bits, maps them to 16-QAM symbols, performs OFDM modulation with IFFT and cyclic prefix insertion, simulates an AWGN channel, and then demodulates the received signal to recover the bits. The system also computes Bit Error Rate (BER) and Signal-to-Noise Ratio (SNR) for performance evaluation.
+# OFDM Communication System Simulation with 16-QAM Modulation
 
-Features
-Random bit generation
+## 🚀 Project Overview  
+This MATLAB project provides a complete simulation of an Orthogonal Frequency Division Multiplexing (OFDM) system using 16-QAM modulation. It demonstrates the entire digital communication chain—from generating random binary data, mapping bits to complex 16-QAM symbols, performing OFDM modulation via IFFT, adding cyclic prefix for robustness, transmitting through an AWGN channel, to finally demodulating and recovering the original bits.
 
-16-QAM modulation and demodulation
+The simulation calculates key performance metrics such as Bit Error Rate (BER) and Signal-to-Noise Ratio (SNR), and visualizes constellation diagrams and BER performance curves, making it an excellent learning tool for understanding modern wireless communication techniques.
 
-OFDM modulation with cyclic prefix
+## ✨ Key Features  
+- Generation of random binary input data  
+- Bit-to-symbol mapping using 16-QAM modulation  
+- OFDM modulation with Inverse Fast Fourier Transform (IFFT)  
+- Cyclic prefix insertion to combat inter-symbol interference  
+- Transmission through Additive White Gaussian Noise (AWGN) channel  
+- Demodulation and bit recovery  
+- Calculation and visualization of BER vs. SNR  
+- Constellation diagram plotting for transmitted and received symbols
 
-AWGN channel simulation
+## 🛠️ Requirements  
+- MATLAB (compatible with R2018b and later versions)
 
-BER and SNR calculation
+## 🎯 How to Use  
+1. Open `ofdm_simulation.m` in MATLAB.  
+2. Run the script to start the simulation.  
+3. Observe constellation plots and BER vs. SNR graphs generated automatically.  
+4. Adjust simulation parameters such as SNR range, number of subcarriers, or bit length directly in the script to experiment with different scenarios.
 
-Visualization of constellation diagrams and performance graphs
+## 💡 Why This Project?  
+OFDM is a cornerstone modulation technique used in many modern wireless systems including Wi-Fi, LTE, and 5G. This simulation offers hands-on insight into OFDM’s working principles and helps build a solid foundation for advanced study or research in digital communications.
 
-Requirements
-MATLAB (tested on R2021a and later)
+---
 
-How to Run
-Open the ofdm_simulation.m script in MATLAB.
-
-Run the script. It will display constellation plots and BER vs. SNR graphs.
-
-Modify SNR values in the script to test performance under different noise levels.
-
-Applications
-This simulation helps understand fundamental concepts of OFDM systems used in modern wireless communications like Wi-Fi and LTE.
+*Feel free to contribute or report issues!*
 
