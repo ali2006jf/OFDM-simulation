@@ -17,17 +17,25 @@ This MATLAB project provides a complete simulation of an Orthogonal Frequency Di
 - Constellation diagrams for received symbols
 
 <!-- 🎯 Constellation Diagrams -->
-<p align="center">
-  <img src="ofdm-photos/Constellation-5SNR.jpg" alt="Constellation at SNR=5" width="200" style="margin: 10px; border-radius: 8px; border: 2px solid #aaa;">
-  <img src="ofdm-photos/Constellation-20SNR.jpg" alt="Constellation at SNR=20" width="200" style="margin: 10px; border-radius: 8px; border: 2px solid #aaa;">
-</p>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="ofdm-photos/Constellation-5SNR.jpg" width="360" style="border: 2px solid #aaa; border-radius: 8px;"><br>
+      <sub>Constellation at SNR = 5 dB</sub>
+    </td>
+    <td align="center">
+      <img src="ofdm-photos/Constellation-20SNR.jpg" width="360" style="border: 2px solid #aaa; border-radius: 8px;"><br>
+      <sub>Constellation at SNR = 20 dB</sub>
+    </td>
+  </tr>
+</table>
 
 ## 🛠️ Requirements  
 - MATLAB (R2018b or newer)
 
 ## ▶️ How to Run  
 1. Clone this repository  
-2. Open `ofdm_simulation.m` in MATLAB  
+2. Open `OFDM.m` in MATLAB  
 3. Run the script to generate results and plots  
 4. Modify parameters like SNR, number of subcarriers, or data size to experiment
 
