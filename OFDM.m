@@ -3,7 +3,7 @@ clc , clear
 bits = randi([0 1], 1,256);
 
 num_subcarriers = 64;
-padding_needed = mod(4 - mod(length(bits), 4), 4);
+padding_needed = mod(256 - mod(length(bits), 256), 256);
 bits = [bits, zeros(1, padding_needed)];
 I_bits = bits;
 
