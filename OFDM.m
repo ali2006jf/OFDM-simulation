@@ -67,13 +67,6 @@ end
 % Parallel to Serial
 ofdm_serial = ofdm_with_cp(:).';
 
-
-%%
-
-
-
-
-
 % Channel
 snr = 15; 
 rx_serial = awgn(ofdm_serial, snr, 'measured');
